@@ -1,0 +1,20 @@
+server:
+  port: 8090
+
+spring:
+  config.activate.on-profile: default
+  datasource:
+    url: jdbc:sqlserver://127.0.0.1:1433;databaseName=kcportal;encrypt=true;trustServerCertificate=true
+    username: sysdev
+    password: sysdev
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+   
+---
+spring:
+  config.activate.on-profile: test
+  datasource:
+    url: jdbc:sqlserver://127.0.0.1:1433;databaseName=kcportal;encrypt=true;trustServerCertificate=true
+    username: sysdev
+    password: sysdev
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    
